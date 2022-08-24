@@ -1,0 +1,32 @@
+.title{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 5vh;
+    color: #3C3C3C;
+} .welcome{
+    margin-top: 30vh;
+    margin-left: 28vw;
+}
+
+/* Information container */
+.tabContent{
+    font-size: 3vh;
+}
+/* Title tab container thingies*/
+.tablink {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 2.7vh;
+    color: #252525;
+}
+
+/* General Fonts*/
+h4,
+h1{
+    margin-top: 10vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    font-weight: 100;
+    color: #252525;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
