@@ -5,9 +5,15 @@
     color: #3C3C3C;
 } .welcome{
     margin-top: 30vh;
-    margin-left: 28vw;
+    margin-left: 28.8vw;
+} .center{
+    margin-top: 2vh;
+    margin-left: 34vw;
 }
-
+.backgroundButton{
+    font-size: 1.2vw;
+    font-weight: 900;
+}
 /* Information container */
 .tabContent{
     font-size: 3vh;
@@ -21,6 +27,7 @@
 }
 
 /* General Fonts*/
+.backgroundButton,
 h4,
 h1{
     margin-top: 10vh;

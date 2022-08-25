@@ -3,6 +3,7 @@ body,
 button {
     /*  background-color: rgb(105, 189, 131);*/
     background-color: #00000030;
+    overflow-x: hidden;
 }
 
 body {
@@ -46,19 +47,14 @@ body {
     border-width: .1vh;
     border-style: solid;
     border-color: #00000030;
+    overflow-x: hidden;
 }
 #home{
     display: block;
 }
 
 
-/*.titleImage{
-  position: absolute;
-  margin-left: 1vw;
 
-  width: 12vh;
-  user-select: none;
-}*/
 
 
 /*
@@ -72,16 +68,25 @@ button {
 
     background-color: none;
     border-radius: 1vh;
-    border-color: #00000030;
+    border-color: #00000050;
     width: 15vw;
     height: 8vh;
 } .tablink:hover{
+    height: 7.9vh;
+    border-color: none;
     background-color: #ffffff30;
 } .active{
     background-color: #ffffff10;
-
 }
 
+.backgroundButton{
+    width: 10vw;
+    height: 6vh;
+    border: none;
+    background-color: #ffffff15;
+    margin-top: 35vh;
+    margin-left: 59vw;
+}
 /* SCROLL BAR */
 
 /* width */
