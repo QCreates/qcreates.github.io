@@ -7,9 +7,9 @@ button {
 
 body {
     background-color: #C59D60;
-    background-image: url('./images/Background1.png');
+    background-image: url('https://i.pinimg.com/originals/e5/7b/56/e57b56e0ad683a0ecfbf45018b83f761.png');
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
     margin-top: -10vh;
