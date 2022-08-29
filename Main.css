@@ -8,10 +8,10 @@ button {
 
 body {
     background-color: #696969;
-    background-image: url('https://i.pinimg.com/originals/e5/7b/56/e57b56e0ad683a0ecfbf45018b83f761.png');
+    background-image: url('Background.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment: inherit;
+    background-size: 100% 100%;
     overflow: hidden;
     margin-top: -10vh;
 }
@@ -26,7 +26,7 @@ body {
     top: 3vh;
     left: 19.5vw;
 
-    overflow-y: none;
+    overflow-y: hidden;
 
     border-radius: 1vh;
     width: 70vw;
@@ -67,7 +67,7 @@ button {
     cursor: pointer;
     border-width: .01vh;
 
-    background-color: none;
+    background-color: transparent;
     border-radius: 1vh;
     border-color: #00000030;
     backdrop-filter: blur(.15vw);
@@ -78,19 +78,24 @@ button {
     padding: 0;
 } .tablink:hover{
     height: 7.9vh;
-    border-color: none;
+    border-color: transparent;
     background-color: #ffffff30;
 } .active{
     background-color: #ffffff10;
 }
 
-.backgroundButton{
+a{
+    color: black;
+}
+
+.githubButton, a{
     width: 10vw;
     height: 6vh;
     border: none;
     background-color: #ffffff15;
     margin-top: 35vh;
     margin-left: 59vw;
+    text-decoration: none;
 }
 /* SCROLL BAR */
 
