@@ -8,9 +8,12 @@ button {
 
 body {
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #696969;
     background-image: url('Background.png');
 =======
+=======
+>>>>>>> parent of e0126bb... Adding fingerprints(not completely working yet)
     background-color: #C59D60;
     background-image: url('https://i.pinimg.com/originals/e5/7b/56/e57b56e0ad683a0ecfbf45018b83f761.png');
 >>>>>>> parent of e0126bb... Adding fingerprints(not completely working yet)
@@ -32,7 +35,11 @@ body {
     left: 27.25vw;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     overflow-y: hidden;
+=======
+    overflow-y: auto;
+>>>>>>> parent of e0126bb... Adding fingerprints(not completely working yet)
 =======
     overflow-y: auto;
 >>>>>>> parent of e0126bb... Adding fingerprints(not completely working yet)
