@@ -9,9 +9,12 @@ button {
 body {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #696969;
     background-image: url('Background.png');
 =======
+=======
+>>>>>>> parent of e0126bb... Adding fingerprints(not completely working yet)
 =======
 >>>>>>> parent of e0126bb... Adding fingerprints(not completely working yet)
     background-color: #C59D60;
@@ -36,7 +39,11 @@ body {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     overflow-y: hidden;
+=======
+    overflow-y: auto;
+>>>>>>> parent of e0126bb... Adding fingerprints(not completely working yet)
 =======
     overflow-y: auto;
 >>>>>>> parent of e0126bb... Adding fingerprints(not completely working yet)
