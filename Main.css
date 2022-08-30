@@ -7,8 +7,13 @@ button {
 }
 
 body {
+<<<<<<< HEAD
     background-color: #696969;
     background-image: url('Background.png');
+=======
+    background-color: #C59D60;
+    background-image: url('https://i.pinimg.com/originals/e5/7b/56/e57b56e0ad683a0ecfbf45018b83f761.png');
+>>>>>>> parent of e0126bb... Adding fingerprints(not completely working yet)
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-size: 100% 100%;
@@ -24,26 +29,29 @@ body {
 .btnContainer{
     position: absolute;
     top: 3vh;
-    left: 19.5vw;
+    left: 27.25vw;
 
+<<<<<<< HEAD
     overflow-y: hidden;
+=======
+    overflow-y: auto;
+>>>>>>> parent of e0126bb... Adding fingerprints(not completely working yet)
 
-    border-radius: 1vh;
-    width: 70vw;
+    backdrop-filter: blur(3px);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .tabContent{
     overflow-y: auto;
     display: none;
     position: absolute;
     top: 12vh;
-    left: 14.5vw;
+    left: 15vw;
 
-    backdrop-filter: blur(.15vw);
+    backdrop-filter: blur(3px);
 
     background-color: #ffffff10;
     height: 85vh;
     width: 70vw;
-
     border-radius: 3vh;
     border-width: .1vh;
     border-style: solid;
@@ -69,13 +77,9 @@ button {
 
     background-color: transparent;
     border-radius: 1vh;
-    border-color: #00000030;
-    backdrop-filter: blur(.15vw);
-
+    border-color: #00000050;
     width: 15vw;
     height: 8vh;
-    margin: 0;
-    padding: 0;
 } .tablink:hover{
     height: 7.9vh;
     border-color: transparent;
