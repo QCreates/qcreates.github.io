@@ -3,32 +3,33 @@ body,
 button {
     /*  background-color: rgb(105, 189, 131);*/
     background-color: #00000030;
+    overflow-x: hidden;
 }
 
 body {
     background-color: #C59D60;
-    background-image: url('./images/Background1.png');
+    background-image: url('../Images/Background.png');
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
     margin-top: -10vh;
 }
+
 .title{
     margin-top: 2vh;
     margin-left: 3vw;
 }
 
-/* Button Container */
+/* Button Container
 .btnContainer{
-    position: absolute;
-    top: 3vh;
-    left: 27.25vw;
-
-    overflow-y: auto;
-
-    backdrop-filter: blur(3px);
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}*/
+.codeSeg{
+    margin-bottom: -8vh;
+    margin-left: 2vw;
+    height: 75%;
+    width: 94.5%;
+    border-radius: 1vh;
 }
 .tabContent{
     overflow-y: auto;
@@ -37,28 +38,23 @@ body {
     top: 12vh;
     left: 15vw;
 
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(.45vh);
 
     background-color: #ffffff10;
     height: 85vh;
     width: 70vw;
-    border-radius: 3vh;
+    border-radius: 1vh;
     border-width: .1vh;
     border-style: solid;
     border-color: #00000030;
+    overflow-x: hidden;
 }
 #home{
     display: block;
 }
 
 
-/*.titleImage{
-  position: absolute;
-  margin-left: 1vw;
 
-  width: 12vh;
-  user-select: none;
-}*/
 
 
 /*
@@ -70,18 +66,43 @@ button {
     cursor: pointer;
     border-width: .01vh;
 
+    backdrop-filter: blur(.3vh);
+
     background-color: none;
     border-radius: 1vh;
-    border-color: #00000030;
-    width: 15vw;
+    border-color: #00000020;
+    width: 9vw;
     height: 8vh;
+} .tablink{
+    position: absolute;
+    top:1.5vw;
+    padding: 0vh;
 } .tablink:hover{
+    height: 7.5vh;
+    border-color: none;
     background-color: #ffffff30;
 } .active{
     background-color: #ffffff10;
-
+} #page1{
+    left: 25.5vw;
+} #page2{
+    left: 35.5vw;
+} #page3{
+    left: 45.5vw;
+} #page4{
+    left: 55.5vw;
+} #page5{
+    left: 65.5vw;
 }
 
+.github{
+    width: 10vw;
+    height: 6vh;
+    border: none;
+    background-color: #ffffff15;
+    margin-top: 35vh;
+    margin-left: 59vw;
+}
 /* SCROLL BAR */
 
 /* width */

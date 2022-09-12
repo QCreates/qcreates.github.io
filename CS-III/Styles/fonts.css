@@ -10,10 +10,6 @@
     margin-top: 2vh;
     margin-left: 34vw;
 }
-.backgroundButton{
-    font-size: 1.2vw;
-    font-weight: 900;
-}
 /* Information container */
 .tabContent{
     font-size: 3vh;
@@ -27,13 +23,19 @@
 }
 
 /* General Fonts*/
-.backgroundButton,
 h4,
-h1{
+h1,
+a{
     margin-top: 10vh;
     margin-right: 5vw;
     margin-left: 5vw;
     font-weight: 100;
     color: #252525;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    margin: 0;
+    font-size: 1.2vw;
+    font-weight: 400;
+    text-decoration: none;
 }
