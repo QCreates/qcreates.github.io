@@ -1,0 +1,210 @@
+body {
+    /*No Scroll*/
+    overflow: hidden;
+    /* Background Image*/
+    background-image: url('../Images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    /* Double Spacing*/
+    line-height: 2;
+}
+
+/*
+-----------------------------------
+Tabs
+-----------------------------------
+*/
+.tabContent{
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+
+    /* Borders */
+    border-radius: 0vh;
+    border-width: .1vh;
+    border-style: none;
+    border-color: #00000060;
+    /* Margins*/
+    padding: 0;
+    position: absolute;
+    margin-top: 7vh;
+    margin-left: 15vw;
+    /* Size */
+    height: 93vh;
+    width: 68.15vw;
+    /* Color */
+    background-color: #ffffff15;
+    backdrop-filter: blur(.45vh);
+} #home{
+    display: block;
+}
+
+
+.tablink{
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    /* Borders */
+    border-radius: 0vh;
+    border-width: .1vh;
+    border-style: none;
+    border-color: #00000060;
+    /* Margins*/
+    padding: 0;
+    /* Size */
+    height: 11vh;
+    width: 13.58vw;
+    /* Color */
+    background-color: #ffffff15;
+} #homePage{
+    /* Color */
+    background-color: #00000001;
+    border: none;
+    margin-left: 1.25vw;
+} #page1{
+    margin-left: 16vw;
+} #page2{
+    margin-left: 29.65vw;
+} #page3{
+    margin-left: 43.27vw;
+} #page4{
+    margin-left: 56.9vw;
+} #page5{
+    margin-left: 70.55vw;
+} #backBtn{
+    margin-left: 43.21vw;
+}
+
+.btnContainer{
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    /* Borders */
+    border-radius: 0vh;
+    border-width: .1vh;
+    border-style: none;
+    border-color: #00000060;
+    /* Margins*/
+    padding: 0;
+    position: absolute;
+    margin-left: -1vw;
+    margin-top: -1vh;
+    /* Size */
+    height: 8vh;
+    width: 110vw;
+    /* Color */
+    background-color: #ffffff50;
+    backdrop-filter: blur(.25vh);
+} a:hover, button:hover{
+    background: #ffffff50;
+    cursor: pointer;
+}
+
+/*
+-----------------------------------
+Image Stuff
+-----------------------------------
+*/
+.codeSeg{
+    width: 65vw;
+    margin-left: 1.5vw;
+}
+.diagram{
+    width: 20vw;
+    margin-left: 20vw;
+} #optimal{
+    margin-top: 70vh;
+    width: 29vw;
+}
+
+/*
+-----------------------------------
+Essay Buttons
+-----------------------------------
+*/
+.essayBtn, .opSortBtn{
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    /* Borders */
+    border-radius: 1vh;
+    border-width: .1vh;
+    border-style: none;
+    border-color: #00000060;
+    /* Margins*/
+    padding: 0;
+    position: absolute;
+    margin-top: 20vh;
+    /* Size */
+    height: 60vh;
+    width: 30vw;
+    /* Color */
+    background-color: #ffffff50;
+    backdrop-filter: blur(.25vh);
+    box-shadow: 1.1px 2.2px 2.2px hsl(0deg 0% 0% / 0.47);
+} #essay1{
+    margin-left: 3vw;
+} #essay2{
+    margin-left: 36vw;
+} .essayBtn:hover{
+    /* Margins*/
+    padding: 0;
+    position: absolute;
+    background-color: #e3e3e399;
+    box-shadow: none;
+} .opSortBtn{
+    margin-top: 5vh;
+}
+
+/*
+-----------------------------------
+Links
+-----------------------------------
+*/
+.github{
+    /* Borders */
+    border-radius: 1vh;
+    border-width: 0vw;
+    border-style: none;
+    border-color: transparent;
+    /* Margins*/
+    position: absolute;
+    margin-top: 0vh;
+    margin-left: 86.5vw;
+    /* Size */
+    height: 6vh;
+    width: 10vw;
+    /* Color */
+    background-color: #ffffff25;
+    backdrop-filter: blur(.45vh);
+    box-shadow: 1.1px 2.2px 2.2px hsl(0deg 0% 0% / 0.47);
+} .github:hover{
+    background-color: #ffffff50;
+    box-shadow: none;
+}
+
+/*
+-----------------------------------
+SCROLL BAR
+-----------------------------------
+*/
+/* Width */
+::-webkit-scrollbar {
+    width: .5vw;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #00000010;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 1vh;
+    background: #99999970;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #696969;
+}

@@ -1,0 +1,17 @@
+#essayMargins{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.heading{
+    width: 14vw;
+}
+
+.essayTitle{
+    text-align: center;
+}
+p{
+    margin: 0;
+}
