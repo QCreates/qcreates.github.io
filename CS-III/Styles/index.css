@@ -1,196 +1,112 @@
-body {
-    /*No Scroll*/
-    overflow: hidden;
-    /* Background Image*/
-    background-image: url('../Images/background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-
-    /* Double Spacing*/
+body{
     line-height: 2;
+    overflow: hidden;
+    margin-right: 0vw;
+    margin-left: 0vw;
+    margin-top: 10vh;
+    background-color: rgb(100,161,157);
 }
 
-/*
------------------------------------
-Tabs
------------------------------------
-*/
-.tabContent{
-    overflow-y: auto;
-    overflow-x: hidden;
-    display: block;
-
-    /* Borders */
-    border-radius: 0vh;
-    border-width: .1vh;
-    border-style: none;
-    border-color: #00000060;
-    /* Margins*/
-    padding: 0;
+/* Containers */
+.mainContainer{
     position: absolute;
-    margin-top: 7vh;
-    margin-left: 15vw;
-    /* Size */
-    height: 93vh;
-    width: 68.15vw;
-    /* Color */
-    background-color: #ffffff15;
-    backdrop-filter: blur(.45vh);
-} #home{
-    display: block;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgba(175, 216, 213, 0.336);
+    border-radius: .5vh;
+    overflow-y: auto;
 }
 
+#sortContainer{
+    margin-top: 25vh;
+    height: 30vh;
+} #sortContainer:hover{
+    background-color: rgba(121, 145, 143, 0.336);
+}
 
-.tablink{
-    overflow-y: hidden;
-    overflow-x: hidden;
+.essayParagraphs{
+    margin-right: 20vw;
+    margin-left: 20vw;
+}
 
-    /* Borders */
-    border-radius: 0vh;
-    border-width: .1vh;
-    border-style: none;
-    border-color: #00000060;
-    /* Margins*/
-    padding: 0;
-    /* Size */
-    height: 11vh;
-    width: 13.58vw;
-    /* Color */
-    background-color: #ffffff15;
-} #homePage{
-    /* Color */
-    background-color: #00000001;
+.essayContainer{
+    margin-left: 4vw;
+    margin-top: 15vh;
+    width: 20vw;
+    height: 30vh;
+    background-color: rgba(175, 216, 213, 0.336);
+    border-radius: .5vh;
     border: none;
-    margin-left: 1.25vw;
-} #page1{
-    margin-left: 16vw;
-} #page2{
-    margin-left: 29.65vw;
-} #page3{
-    margin-left: 43.27vw;
-} #page4{
-    margin-left: 56.9vw;
-} #page5{
-    margin-left: 70.55vw;
-} #backBtn{
-    margin-left: 43.21vw;
+} .essayContainer:hover{
+    background-color: rgba(121, 145, 143, 0.336);
 }
 
 .btnContainer{
-    overflow-y: hidden;
-    overflow-x: hidden;
-
-    /* Borders */
-    border-radius: 0vh;
-    border-width: .1vh;
-    border-style: none;
-    border-color: #00000060;
-    /* Margins*/
-    padding: 0;
-    position: absolute;
-    margin-left: -1vw;
-    margin-top: -1vh;
-    /* Size */
-    height: 8vh;
-    width: 110vw;
-    /* Color */
-    background-color: #ffffff50;
-    backdrop-filter: blur(.25vh);
-} a:hover, button:hover{
-    background: #ffffff50;
-    cursor: pointer;
-}
-
-/*
------------------------------------
-Image Stuff
------------------------------------
-*/
-.codeSeg{
-    width: 65vw;
-    margin-left: 1.5vw;
-}
-.diagram{
+    margin-left: 10vw;
+    margin-top: 15vh;
     width: 20vw;
+    height: 10vh;
+    background-color: rgba(175, 216, 213, 0.336);
+    border-radius: .5vh;
+    border: none;
+} .btn:hover{
+    background-color: rgba(121, 145, 143, 0.336);
+}
+
+a{
+    padding-top: 1vh;
+    width: calc(6vw + 2vh);
+    height: 5vh;
+    border-radius: .5vh;
+}.tablink:hover{
+    background-color: rgba(175, 216, 213, 0.336);
+}
+
+/* Random Stuffs */
+.importance, .aboutMe{
+    margin-top: 10vh;
+}
+
+.codeSeg{
     margin-left: 20vw;
-} #optimal{
-    margin-top: 70vh;
-    width: 29vw;
+    width: 60vw;
 }
 
-/*
------------------------------------
-Essay Buttons
------------------------------------
-*/
-.essayBtn, .opSortBtn{
-    overflow-y: hidden;
-    overflow-x: hidden;
-
-    /* Borders */
-    border-radius: 1vh;
-    border-width: .1vh;
-    border-style: none;
-    border-color: #00000060;
-    /* Margins*/
-    padding: 0;
-    position: absolute;
-    margin-top: 20vh;
-    /* Size */
-    height: 60vh;
-    width: 30vw;
-    /* Color */
-    background-color: #ffffff50;
-    backdrop-filter: blur(.25vh);
-    box-shadow: 1.1px 2.2px 2.2px hsl(0deg 0% 0% / 0.47);
-} #essay1{
-    margin-left: 3vw;
-} #essay2{
-    margin-left: 36vw;
-} .essayBtn:hover{
-    /* Margins*/
-    padding: 0;
-    position: absolute;
-    background-color: #e3e3e399;
-    box-shadow: none;
-} .opSortBtn{
+.diagram{
     margin-top: 5vh;
+    margin-left: 40vw;
+    width: 20vw
 }
 
-/*
------------------------------------
-Links
------------------------------------
-*/
-.github{
-    /* Borders */
-    border-radius: 1vh;
-    border-width: 0vw;
-    border-style: none;
-    border-color: transparent;
-    /* Margins*/
+/* BUTTONS */
+.tablink{
+    top: 2vh;
     position: absolute;
-    margin-top: 0vh;
-    margin-left: 86.5vw;
-    /* Size */
-    height: 6vh;
-    width: 10vw;
-    /* Color */
-    background-color: #ffffff25;
-    backdrop-filter: blur(.45vh);
-    box-shadow: 1.1px 2.2px 2.2px hsl(0deg 0% 0% / 0.47);
-} .github:hover{
-    background-color: #ffffff50;
-    box-shadow: none;
+} #page1{
+    left: 55vw;
+} #page2{
+    left: 64.5vw;
+} #page3{
+    left: 73.5vw;
+} #page4{
+    left: 83vw;
+} .homelink{
+    position: absolute;
+    top: 2vh;
+    left: 10vw;
+    width: 30vw;
+} #GitHub{
+    left: 92vw;
 }
 
-/*
------------------------------------
-SCROLL BAR
------------------------------------
-*/
+/* TEXT */
+h1{
+    text-align: center;
+} p{
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
 /* Width */
 ::-webkit-scrollbar {
     width: .5vw;
@@ -207,4 +123,4 @@ SCROLL BAR
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #696969;
-}
+}  

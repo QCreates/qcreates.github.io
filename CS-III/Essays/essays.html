@@ -12,31 +12,29 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="../../CS-III/Styles/fonts.css" />
     <link rel="stylesheet" href="../../CS-III/Styles/index.css" />
-
   </head>
 
   <body onload="JSON()">
-    <div class="btnContainer">
-      <a href="../../index.html" class="tablink" id="homePage">Digital Portfolio</a>
-      <!-- <button class="tablink" id="page1" onclick="openTab(event, 'pg1')">About Me</button>
-	   <button class="tablink" id="page2" onclick="openTab(event, 'pg2')">Course Directories</button>
-	   <button class="tablink" id="page3" onclick="openTab(event, 'pg3')">ISP</button>
-	   <button class="tablink" id="page5" onclick="openTab(event, 'pg5')">Optimal Sort</button> -->
-	   <a href="../../index.html" class="tablink" id="page1">About Me</a>
-	   <a href="../../CS-III/MainPage/CourseDirectories.html" class="tablink" id="page2">Course Directories</a>
-	   <a href="../../CS-III/MainPage/Isp.html" class="tablink" id="page3">ISP</a>
-	   <a href="../../CS-III/Essays/essays.html" class="tablink" id="page4">Essays</a>
-	   <a href="../../CS-III/Projects/Optimal Sort.html" class="tablink" id="page5">Optimal Sort</a>
+    <div class="buttonContainer" id="cont1">
+      <a href="../../index.html" class="homelink" id="homePage">Digital Portfolio</a>
     </div>
-
-
-    <button class="github"><a href="qcreates.github.io/"> Go to Github</a></button>
-
-    <div id="pg4" class="tabContent">
-      <a href="./Fingerprints.html"><button class="essayBtn" id="essay1"> <h4 id="essay"> Fingerprints </h4> </button></a>
-      <a href="./AI Sentience.html"><button class="essayBtn" id="essay2"> <h4 id="essay">AI Sentience</h4> </button></a>
+    <div class="buttonContainer" id="cont2">
+      <a href="../../index.html" class="tablink" id="page1">Home</a>
+      <a href="../Courses/courses.html" class="tablink" id="page2">Courses</a>
+      <a href="../Essays/essays.html" class="tablink" id="page3">Essays</a>
+      <a href="../Projects/projects.html" class="tablink" id="page4">Projects</a>
     </div>
+    <div class="mainContainer">
+      <div class="aboutMe">
+	<h1>These Are a Couple of My Works</h1>
+      </div>
+      <button onclick="window.location='./Fingerprints.html'" class="essayContainer">Fingerprints</button>
+      <button onclick="window.location='./AI\ Sentience.html'" class="essayContainer">AI Sentience</button>
+      <button onclick="window.location='./Sort.html'" class="essayContainer">Optimal Sort</button>
+      <button onclick="window.location='./Biases.html'" class="essayContainer">Biases</button>
+
+    </div>
+    <a href="https://qcreates.github.io/index.html" class="tablink" id="GitHub">GitHub</a>
 
   </body>
-
   </html>
