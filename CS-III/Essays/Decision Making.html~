@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Stuff -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Tab Thing -->
+    <link rel="shortcut icon" href="https://i.pinimg.com/236x/01/4e/59/014e59fcdefd0a42af154e35b28cc09b--the-last-avatar-avatar-the-last-airbender.jpg" type="image/png" sizes="96x96">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../CS-III/Styles/fonts.css" />
+    <link rel="stylesheet" href="../../CS-III/Styles/index.css" />
+    <link rel="stylesheet" href="../../CS-III/Styles/apa.css" />
+  </head>
+
+  <body onload="JSON()">
+    <div class="buttonContainer" id="cont1">
+      <a href="/index.html" class="homelink" id="homePage">Digital Portfolio</a>
+    </div>
+    <div class="buttonContainer" id="cont2">
+      <a href="../../CS-III/Essays/essays.html" class="tablink" id="page3">BACK</a>
+    </div>
+    <div class="mainContainer" id="apa">
+      <div class="essayTitle">
+	<p>Decision Bias In Software Development</p>
+	<p>Qasem Abdeljaber</p>
+	<p>Allen ISD STEAM Center</p>
+	<p>Advanced Computer Science III</p>
+	<p>Professor Ben-Yaakov</p>
+	<p>9/23/2022</p>
+      </div>
+      <div class="essayParagraphs">
+	<p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decision biases in software development can have a significant impact on the success of a project. These biases can arise from a variety of sources and can lead to poor decision making, resulting in suboptimal outcomes. There are five common decision biases that can affect software development: interest bias, perception bias, stability bias, investment bias, and social bias.
+	  <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interest bias refers to the tendency for individuals to be more influenced by information that aligns with their existing beliefs or interests. In software development, this bias can manifest in the form of a developer or team being overly focused on a particular technology or approach, even if it may not be the best fit for the project at hand. This can lead to suboptimal solutions and can even result in project failure if the chosen approach is not viable.
+	  <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perception bias is the tendency for individuals to interpret information in a way that aligns with their preconceived notions or beliefs. In software development, this bias can manifest as developers making assumptions about user behavior or requirements without adequately researching or verifying their assumptions. This can result in the development of software that does not meet the needs of its intended users, leading to project failure or the need for significant rework.
+	  <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stability bias is the tendency for individuals to prefer to maintain the status quo, even if a change may be beneficial. In software development, this bias can manifest as a reluctance to change established processes or technologies, even if doing so may improve the project. This can lead to suboptimal solutions and can prevent the adoption of new and potentially beneficial technologies.
+	  <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Investment bias is the tendency for individuals to continue investing in a project or course of action, even if it is not successful. In software development, this bias can manifest as a reluctance to pivot or change direction, even if the current approach is not working. This can result in the continuation of a project that is not viable, leading to significant waste of resources.
+	  <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social bias is the tendency for individuals to conform to the beliefs and behaviors of their social group. In software development, this bias can manifest as a reluctance to challenge the views or approaches of the team or organization, even if they may not be the best fit for the project. This can lead to groupthink and suboptimal decision making.
+	  <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overall, decision biases can have a significant impact on the success of a software development project. It is important for individuals and teams to be aware of these biases and to actively work to mitigate them in order to make the best possible decisions. This may require challenging existing beliefs and approaches, conducting thorough research and analysis, and being open to new ideas and technologies. By doing so, software development teams can improve the chances of success for their projects.
+	</p>
+      </div>
+    </div>
+  </body>
+  </html>
