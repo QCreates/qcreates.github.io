@@ -4,7 +4,7 @@ body{
     margin-right: 0vw;
     margin-left: 0vw;
     margin-top: 10vh;
-    background-color: rgb(00,200,255);
+    background-color: white;
 }
 
 /* Containers */
@@ -75,10 +75,10 @@ a{
 
 .portrait{
     position: absolute;
-    top: .5vh;
-    left: 3vw;
-    width: 5vw;
-    border-radius: 2vh;
+    top: 1vh;
+    left: 1vw;
+    width: 8vh;
+    border-radius: 1vh;
 }
 .diagram{
     margin-top: 5vh;
