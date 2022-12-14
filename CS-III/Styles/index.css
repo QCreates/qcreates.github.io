@@ -4,14 +4,15 @@ body{
     margin-right: 0vw;
     margin-left: 0vw;
     margin-top: 10vh;
-    background-color: rgb(100,161,157);
+    background-color: rgb(00,200,255);
 }
 
 /* Containers */
 .mainContainer{
+    margin-left: 1vw;
     position: absolute;
-    width: 100vw;
-    height: 90vh;
+    width: 98vw;
+    height: 89vh;
     background-color: rgba(175, 216, 213, 0.336);
     border-radius: .5vh;
     overflow-y: auto;
