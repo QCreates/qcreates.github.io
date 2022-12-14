@@ -73,8 +73,14 @@ a{
     width: 60vw;
 }
 
-.portrait, .diagram{
-    image-resolution: 300dpi;
+.portrait{
+    position: absolute;
+    top: .5vh;
+    left: 3vw;
+    width: 5vw;
+    border-radius: 2vh;
+}
+.diagram{
     margin-top: 5vh;
     margin-left: 40vw;
     width: 20vw
