@@ -1,5 +1,5 @@
 body{
-    color: darkslategray;
+    color: #d9d9d9;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -25,15 +25,15 @@ p{
 
 .tablink{
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
 }
 a, button{
     text-decoration: none;
-    color: darkslategray;
-    font-weight: 200;
+    color: #d9d9d9;
+    font-weight: 400;
     font-size: 2vh;
 } a:hover, button:hover {
-    color: black;
+    color: darkslategray;
     font-weight: 300;
     cursor: pointer;
 }
