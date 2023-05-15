@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Stuff -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Tab Thing -->
+    <link rel="shortcut icon" href="https://i.pinimg.com/236x/01/4e/59/014e59fcdefd0a42af154e35b28cc09b--the-last-avatar-avatar-the-last-airbender.jpg" type="image/png" sizes="96x96">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../CS-III/Styles/fonts.css" />
+    <link rel="stylesheet" href="../CS-III/Styles/index.css" />
+  </head>
+
+  <body onload="JSON()">
+    <img class="portrait" src="../CS-III/Images/Portrait.jpg" alt="Portrait">
+    <div class="buttonContainer" id="cont1">
+      <a href="rait.jpg" alt="Portrait">
+	  19 |     <div class="buttonContainer" id="cont1">       " class="homelink" id="homePage">Photography Portfolio</a>
+    </div>
+    <div class="buttonContainer" id="cont2">
+      <a href="./index.html" class="tablink" id="page1">Home</a>
+      <a href="./Photos/photos.html" class="tablink" id="page2">Photos</a>
+      <a href="./aboutMe.html" class="tablink" id="page3">About Me</a>
+      <a href="./contact.html" class="tablink" id="page4">Contact</a>
+    </div>
+    <div class="mainContainer">
+      <div class="aboutMe">
+	<h1>Contact</h1>
+	<h1>In person, this is how I look like:</h1>
+	<img class="portraitContact" src="../CS-III/Images/Portrait.jpg" alt="PortraitContact">
+      </div>
+    </div>
+  </body>
+  </html>

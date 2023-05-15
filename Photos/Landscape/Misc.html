@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Stuff -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Tab Thing -->
+    <link rel="shortcut icon" href="https://i.pinimg.com/236x/01/4e/59/014e59fcdefd0a42af154e35b28cc09b--the-last-avatar-avatar-the-last-airbender.jpg" type="image/png" sizes="96x96">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../CS-III/Styles/fonts.css" />
+    <link rel="stylesheet" href="../../CS-III/Styles/index.css" />
+
+    <style>
+      .image-container {
+	  margin-left: 3vw;
+	  margin-right: 3vw;
+          
+      }
+      .image-container img {
+          margin: .5vw;
+	  border-radius: 1vh;
+      } .resize{
+	  max-height: 60vh;
+	  
+      }
+    </style>
+
+  </head>
+
+  <body onload="JSON()">
+    <div class="buttonContainer" id="cont1">
+      <a href="../../photoIndex.html" class="homelink" id="homePage">Photography Portfolio</a>
+    </div>
+    <div class="buttonContainer" id="cont2">
+      <a href="../photos.html" class="tablink" id="page3">BACK</a>
+    </div>
+    <div class="mainContainer">
+      <div>
+	<h1>This Page Contains Some of My Landscape, Street, and Other Types of Photography</h1>
+      </div>
+
+      <div class="image-container" id="imageContainer"></div>
+      <script>
+	// Replace this array with the file paths of your local images
+	const imagePaths = [
+	    '20210530150407_IMG_6205.JPG', '20210605054411_IMG_7702.JPG', '20210605172322_IMG_7761.JPG', 'ExtremeHiQuality.jpg', 'IMG-74.jpg', 'temp1.jpg', 'temp2.jpg', 'temp3.jpg'
+	];
+
+	const imageContainer = document.getElementById('imageContainer');
+
+	imagePaths.forEach((path) => {
+	    const img = document.createElement('img');
+	    img.src = path;
+	    img.classList.add('resize');
+	    imageContainer.appendChild(img);
+	});
+      </script>
+
+    </div>
+
+  </body>
+</html>

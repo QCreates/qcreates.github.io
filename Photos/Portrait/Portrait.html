@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Stuff -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Tab Thing -->
+    <link rel="shortcut icon" href="https://i.pinimg.com/236x/01/4e/59/014e59fcdefd0a42af154e35b28cc09b--the-last-avatar-avatar-the-last-airbender.jpg" type="image/png" sizes="96x96">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../CS-III/Styles/fonts.css" />
+    <link rel="stylesheet" href="../../CS-III/Styles/index.css" />
+
+    <style>
+      .image-container {
+	  margin-left: 3vw;
+	  margin-right: 3vw;
+          
+      }
+      .image-container img {
+          margin: .5vw;
+	  border-radius: 1vh;
+      } .resize{
+	  max-height: 30vh;
+	  
+      }
+    </style>
+
+  </head>
+
+  <body onload="JSON()">
+    <div class="buttonContainer" id="cont1">
+      <a href="../../photoIndex.html" class="homelink" id="homePage">Photography Portfolio</a>
+    </div>
+    <div class="buttonContainer" id="cont2">
+      <a href="../photos.html" class="tablink" id="page3">BACK</a>
+    </div>
+    <div class="mainContainer">
+      <div>
+	<h1>This Page Contains Some Pictures I Took Of Different People
+      </div>
+
+      <div class="image-container" id="imageContainer"></div>
+      <script>
+	// Replace this array with the file paths of your local images
+	const imagePaths = [
+	    '20210418053000_IMG_2499.JPG', '20210530164806_IMG_6295.JPG', '20210712095727_IMG_9210.JPG', '20211121162352__MG_2620.JPG', 'Abdeljaber_Qasem_Silhoutte.jpg', 'IMG-80.jpg', 'Portrait_02.jpg', '20210418053345_IMG_2514.JPG', '20210601124431_IMG_6570.JPG', '20210905162415_IMG_1141_1.JPG', '20211124162450__MG_2993.JPG', 'Dania.jpg', '_MG_6651.jpg', 'Portrait.jpg', '20210515023409_IMG_3884.JPG', '20210601153932_IMG_6630.JPG', '20211121152844__MG_2472.JPG', '20211124162627__MG_3003.JPG', 'IMG02.jpg', '_MG_6671.jpg', 'Suhaib_Portrait_2.jpg', '20210523152858_IMG_4545.JPG', '20210601183825_IMG_6768.JPG', '20211121153519__MG_2517.JPG', '20220223154257__MG_6300.JPG', 'IMG-25.jpg', '_MG_6676.jpg', 'Temp.jpg', '20210527153612_IMG_5889.JPG', '20210712095343_IMG_9170.JPG', '20211121153531__MG_2525.JPG', '20221215152026__MG_9370.JPG', 'IMG26.jpg', 'MomoGlasses.jpg'
+	    
+	];
+
+	const imageContainer = document.getElementById('imageContainer');
+
+	imagePaths.forEach((path) => {
+	    const img = document.createElement('img');
+	    img.src = path;
+	    img.classList.add('resize');
+	    imageContainer.appendChild(img);
+	});
+      </script>
+
+    </div>
+
+  </body>
+</html>
