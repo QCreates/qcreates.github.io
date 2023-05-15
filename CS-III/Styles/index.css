@@ -96,6 +96,11 @@ a{
     width: 60vw;
 }
 
+.ganttChart{
+    width: 70vw;
+    margin-left: 5vw;
+    border-radius: 1vh;
+}
 .portrait{
     position: absolute;
     top: 1vh;
@@ -105,7 +110,7 @@ a{
 }
 .portraitContact{
     position: absolute;
-    top: 30vh;
+    top: 40vh;
     left: 44vw;
     width: 10vw;
     border-radius: 1vh;
@@ -136,6 +141,9 @@ a{
     width: 30vw;
 } #GitHub{
     left: 92vw;
+} #blog{
+    left: 92vw;
+    bottom: 10vh;
 }
 
 /* TEXT */
