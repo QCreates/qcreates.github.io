@@ -1,10 +1,10 @@
 body{
-    color: #d9d9d9;
+    color: #84b6b8;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1{
-    font-size: 4vh;
+    font-size: 3vh;
     font-weight: 300;
 }
 
@@ -31,12 +31,11 @@ p{
 }
 a, button{
     text-decoration: none;
-    color: #d9d9d9;
+    color: #283435;
     font-weight: 400;
     font-size: 2vh;
 } a:hover, button:hover {
-    color: darkslategray;
-    font-weight: 300;
+    color: #788fb1;
     cursor: pointer;
 }
 

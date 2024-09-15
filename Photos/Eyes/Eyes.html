@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Meta Stuff -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,69 +14,78 @@
     <link rel="stylesheet" href="../../CS-III/Styles/index.css" />
 
     <style>
-      .image-thumbnail {
-	  max-width: 100px;
-	  height: auto;
-	  margin: 10px;
-	  cursor: pointer;
-      }
-      .image-container {
-	  margin-left: 3vw;
-	  margin-right: 3vw;
-          
-      }
-      .image-container img {
-          margin: .5vw;
-	  border-radius: 1vh;
-      } .resize{
-	  max-height: 24vh;
-	  
-      }
+        .image-container {
+            margin-left: 3vw;
+            margin-right: 3vw;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1vw;
+            justify-content: center;
+        }
+        
+        .image-container img {
+            height: 26vw; /* Set a uniform height for all images */
+            width: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensures images fill the height nicely */
+            border-radius: 1vh;
+        }
     </style>
 
-  </head>
-
-  <body onload="JSON()">
+</head>
+<body onload="JSON()">
     <div class="buttonContainer" id="cont1">
-      <a href="../../photoIndex.html" class="homelink" id="homePage">Photography Portfolio</a>
+        <a href="../../photoIndex.html" class="homelink" id="homePage">Photography Portfolio</a>
     </div>
     <div class="buttonContainer" id="cont2">
-      <a href="../photos.html" class="tablink" id="page3">BACK</a>
+        <a href="../photos.html" class="tablink" id="page3">BACK</a>
     </div>
     <div class="mainContainer">
-      <div>
-	<h1>This Page Contains Some Pictures I Took Of Different Eyes</h1>
-      </div>
+        <div>
+            <h1>This Page Contains Some Pictures I Took Of Different Eyes</h1>
+        </div>
 
-      <div class="image-container" id="imageContainer"></div>
-      <script>
-	// Replace this array with the file paths of your local images
-	const imagePaths = [
-	    '20210415053338_IMG_2350.JPG', '20210418065738_IMG_2540.JPG', '20210422094611_IMG_2681.JPG', '20220626175656__MG_8343.JPG', 'ChangedImage.jpg', 'IMG66.jpg', 'IMG69.jpg', 'IMG71.jpg', '20210418065316_IMG_2537.JPG', '20210418071945_IMG_2583.JPG', '20220303_234353.jpg', '2D6F4B2D-89D7-40B9-9B08-4C1BE158A823.jpg', 'GimelaEye.jpg', 'IMG68.jpg', 'IMG70.jpg', 'MaxEye.jpg'
-	];
+        <div class="image-container" id="imageContainer"></div>
+        
+        <!-- Full-screen overlay -->
+        <div class="fullscreen-overlay" id="fullscreenOverlay">
+            <button class="close-btn" id="closeBtn">&times;</button> <!-- Close button -->
+            <img id="fullscreenImg" src="" alt="Full Screen Image"> <!-- Placeholder for the full-screen image -->
+        </div>
 
-	const imageContainer = document.getElementById('imageContainer');
+        <script>
+            const imagePaths = [
+                '20210415053338_IMG_2350.JPG', '20210418065738_IMG_2540.JPG', '20210422094611_IMG_2681.JPG', 
+                '20220626175656__MG_8343.JPG', 'ChangedImage.jpg', 'IMG66.jpg', 'IMG69.jpg', 'IMG71.jpg', 
+                '20210418065316_IMG_2537.JPG', '20210418071945_IMG_2583.JPG', '20220303_234353.jpg', 
+                '2D6F4B2D-89D7-40B9-9B08-4C1BE158A823.jpg', 'GimelaEye.jpg', 'IMG68.jpg', 'IMG70.jpg', 'MaxEye.jpg'
+            ];
 
-	// Loop through the imagePaths array and create an <img> element for each image
-        imagePaths.forEach((path) => {
-	    // Create the thumbnail image element with a compressed version of the image
-	    const thumbnailImg = document.createElement('img');
-	    thumbnailImg.classList.add('image-thumbnail');
-	    thumbnailImg.src = path;
+            const imageContainer = document.getElementById('imageContainer');
+            const fullscreenOverlay = document.getElementById('fullscreenOverlay');
+            const fullscreenImg = document.getElementById('fullscreenImg');
+            const closeBtn = document.getElementById('closeBtn');
 
-	    // Set the data-src attribute to the full-sized version of the image
-	    thumbnailImg.dataset.src = path;
+            imagePaths.forEach((path) => {
+                const img = document.createElement('img');
+                img.src = path;
+                img.classList.add('resize');
+                img.setAttribute('loading', 'lazy'); // Adding lazy loading attribute
+                
+                // Add click event to display image in fullscreen
+                img.addEventListener('click', () => {
+                    fullscreenImg.src = path; // Set the src of the fullscreen image
+                    fullscreenOverlay.style.display = 'flex'; // Show the overlay
+                });
 
-	    // Add a click event listener to swap out the src attribute with the data-src attribute
-	    thumbnailImg.addEventListener('click', () => {
-		thumbnailImg.src = thumbnailImg.dataset.src;
-	    });
+                // Append the image to the container
+                imageContainer.appendChild(img);
+            });
 
-	    // Append the thumbnail image to the container
-	    imageContainer.appendChild(thumbnailImg);
-				         });</script>
-
+            // Event listener to close the overlay when clicking the close button
+            closeBtn.addEventListener('click', () => {
+                fullscreenOverlay.style.display = 'none';
+            });
+        </script>
     </div>
-
-  </body>
+</body>
 </html>

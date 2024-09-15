@@ -19,13 +19,19 @@
 	  margin-right: 3vw;
           
       }
-      .image-container img {
-          margin: .5vw;
-	  border-radius: 1vh;
-      } .resize{
-	  max-height: 60vh;
-	  
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1vw;
+        justify-content: center;
+      }.image-container img{
+        justify-content: center; /* Center the grid within the container */
+        height: 20vw; /* Set a uniform height for all images */
+        width: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensures images fill the height nicely */
+        border-radius: 1vh;
       }
+      
     </style>
 
   </head>
@@ -43,20 +49,49 @@
       </div>
 
       <div class="image-container" id="imageContainer"></div>
+        
+      <!-- Full-screen overlay -->
+      <div class="fullscreen-overlay" id="fullscreenOverlay">
+          <button class="close-btn" id="closeBtn">&times;</button> <!-- Close button -->
+          <img id="fullscreenImg" src="" alt="Full Screen Image"> <!-- Placeholder for the full-screen image -->
+      </div>
       <script>
 	// Replace this array with the file paths of your local images
-	const imagePaths = [
-	    '20210530150407_IMG_6205.JPG', '20210605054411_IMG_7702.JPG', '20210605172322_IMG_7761.JPG', 'ExtremeHiQuality.jpg', 'IMG-74.jpg', 'temp1.jpg', 'temp2.jpg', 'temp3.jpg'
+	const imagePaths = [    
+    '20210530150407_IMG_6205.JPG', '20210605054411_IMG_7702.JPG', 
+    'Aqsa_043.JPG', 'Aqsa_Trip_LScape_04.JPG', 'AqsaTrip29.JPG', 
+    'Aqsa_Trip_077.JPG', 'AqsaTrip01.JPG', 'ExtremeHiQuality.JPG', 'IMG-74.JPG', 
+    'temp1.JPG', 'temp2.JPG', 'temp3.JPG', 
+    '20210605172322_IMG_7761.JPG', 'Aqsa_Trip_012.JPG'
+    
 	];
 
-	const imageContainer = document.getElementById('imageContainer');
 
-	imagePaths.forEach((path) => {
-	    const img = document.createElement('img');
-	    img.src = path;
-	    img.classList.add('resize');
-	    imageContainer.appendChild(img);
-	});
+  const imageContainer = document.getElementById('imageContainer');
+  const fullscreenOverlay = document.getElementById('fullscreenOverlay');
+  const fullscreenImg = document.getElementById('fullscreenImg');
+  const closeBtn = document.getElementById('closeBtn');
+
+    imagePaths.forEach((path) => {
+        const img = document.createElement('img');
+        img.src = path;
+        img.classList.add('resize');
+        img.setAttribute('loading', 'lazy'); // Adding lazy loading attribute
+        
+        // Add click event to display image in fullscreen
+        img.addEventListener('click', () => {
+            fullscreenImg.src = path; // Set the src of the fullscreen image
+            fullscreenOverlay.style.display = 'flex'; // Show the overlay
+        });
+
+        // Append the image to the container
+        imageContainer.appendChild(img);
+    });
+
+    // Event listener to close the overlay when clicking the close button
+    closeBtn.addEventListener('click', () => {
+        fullscreenOverlay.style.display = 'none';
+    });
       </script>
 
     </div>

@@ -4,18 +4,19 @@ body{
     margin-right: 0vw;
     margin-left: 0vw;
     margin-top: 10vh;
-    background-color: #202124;
+    background-color: #cfeef1;
 }
 
 /* Containers */
 .mainContainer{
-    margin-left: 1vw
+    margin-left: 1vw;
     width: 98vw;
     height: 89vh;
-    background-color: rgba(175, 216, 213, 0.336);
+    background-color: #f3f9fc;
     border-radius: .5vh;
     overflow-y: auto;
 }
+
 
 #sortContainer{
     margin-top: 25vh;
@@ -34,17 +35,17 @@ body{
     margin-top: 10vh;
     width: 18vw;
     height: 30vh;
-    background-color: #33333325;
-    border-radius: .5vh;
+    background-color: #9ed9db60;
+    border-radius: 2.5vh;
     border: none;
 } .essayContainer:hover{
-    background-color: #d9d9d9;
-} photoContainer{
+    background-color: #f3f9fc;
+} .photoContainer{
     margin-left: 5vw;
     margin-top: 10vh;
-    width: 18vw;
+     width: 18vw;
     height: 30vh;
-    background-color: #33333325;
+    background-color: #9ed9db60;
     border-radius: .5vh;
     border: none;
 }
@@ -54,11 +55,11 @@ body{
     margin-top: 15vh;
     width: 20vw;
     height: 10vh;
-    background-color: rgba(175, 216, 213, 0.336);
+    background-color: #f3f9fc;
     border-radius: .5vh;
     border: none;
 } .btn:hover{
-    background-color: #d9d9d9;
+    background-color: #fedeef;
 }
 
 .journalContainer{
@@ -67,12 +68,12 @@ body{
     border-radius: 1vh;
     margin-bottom: 2vh;
     margin-left: 10vw;
-    background-color: #9d9d9d50;
+    background-color: #defeed;
 } .date{
     margin-left: 30vw;
     width: 20vw;
     height: 10vh;
-    background-color: rgba(175, 216, 213, 0.336);
+    background-color: #f3f9fc;
     border-radius: .5vh;
     border: none;
 }
@@ -89,6 +90,43 @@ a{
 /* Random Stuffs */
 .importance, .aboutMe{
     margin-top: 10vh;
+}
+       
+.image-container img{
+    cursor: pointer; /* Indicate that the images are clickable */
+}
+
+/* Full-screen overlay for displaying images */
+.fullscreen-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background with some transparency */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures it appears above all other content */
+}
+
+.fullscreen-overlay img {
+    max-width: 90vw; /* Full width of the viewport */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 90vh; /* Fit within the viewport height */
+    border-radius: 2vh; /* Optional: adds rounded corners */
+}
+
+.fullscreen-overlay .close-btn {
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    color: #fedeef;
+    font-size: 3vw;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
 }
 
 .codeSeg{
