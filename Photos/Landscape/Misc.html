@@ -15,9 +15,8 @@
 
     <style>
       .image-container {
-	  margin-left: 3vw;
-	  margin-right: 3vw;
-          
+        margin-left: 3vw;
+        margin-right: 3vw;
       }
       .image-container {
         display: flex;
@@ -31,7 +30,12 @@
         object-fit: cover; /* Ensures images fill the height nicely */
         border-radius: 1vh;
       }
-      
+      @media screen and (orientation: portrait) {
+        .image-container img{
+          height: auto;
+          width: 85vw; /* Set a uniform width for all images */
+        }
+      }
     </style>
 
   </head>

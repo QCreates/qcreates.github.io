@@ -243,12 +243,15 @@ h1{
         
     /* BUTTONS */
     .tablink{
-        width: 15vw;
+        width: 22vw;
         font-size: 2vh;
+        justify-content: center;
+        margin-top: 2vh;
+        line-height: 2vh;
     }.homelink{
         font-size: 2.5vh;
-        margin-right: .1vw;
-        width: 25.9vw;
+        margin-right: 1vw;
+        width: 9vw;
         border-radius: 1vh;
         background-color: #00000000;
         justify-content: center;
@@ -265,7 +268,7 @@ h1{
         display: none;
     }
 
-     #contact{
+    #contact{
         display: block;
         margin-top: 25vh;
     } .contact_container{
@@ -281,5 +284,16 @@ h1{
     }#misc1{
         margin-top: 30vh;
     }
+
+    
+    .essayContainer{
+        margin-left: 5vw;
+        margin-top: 7vh;
+        width: 40vw;
+        height: 20vh;
+        background-color: #9ed9db60;
+        border-radius: 7vh;
+        border: none;
+    } 
 
 }
