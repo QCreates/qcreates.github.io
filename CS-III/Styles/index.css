@@ -31,10 +31,10 @@ body{
 }
    
 .essayContainer{
-    margin-left: 9vw;
-    margin-top: 10vh;
-    width: 35vw;
-    height: 20vh;
+    margin-left: 13vw;
+    margin-top: 3vh;
+    width: 30vw;
+    height: 30vh;
     background-color: #9ed9db60;
     border-radius: 7vh;
     border: none;
@@ -75,14 +75,18 @@ body{
     background-color: #00000000;
     border-radius: 1vh;
 }.homelink{
-    margin-right: 25vw;
     width: 23vw;
     height: 6vh;
     padding-top: 2vh;
     background-color: #00000040;
     border-top-left-radius: 0vh;
     border-bottom-left-radius: 0vh;
-} .homelink:hover{
+}#homePage1{
+    margin-right: 25vw;
+}#homePage{
+    border-radius: .5vh;
+    margin-right: 77vw;
+}.homelink:hover{
     background-color: #00000010;
 } #GitHub{
     left: 92vw;
