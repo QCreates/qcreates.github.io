@@ -241,17 +241,24 @@ h1{
         
     /* BUTTONS */
     .tablink{
-        width: 22vw;
-        font-size: 2vh;
+        width: 15vw;
+        height: 4vh;
+        padding-top: 2vh;
+        font-size: 1.6vh;
         justify-content: center;
-        margin-top: 2vh;
+        margin-top: 1vh;
+        margin-right: .1vw;
         line-height: 2vh;
+        background-color: none;
     }.homelink{
-        font-size: 2.5vh;
-        margin-right: 1vw;
-        width: 9vw;
-        border-radius: 1vh;
-        background-color: #00000000;
+        position: absolute;
+        font-size: 2vh;
+        left: 2vw;
+        width: 25vw;
+        padding-right: 2vw;
+        padding-left: 2vw;
+        border-radius: .5vh;
+        background-color: #788fb160;
         justify-content: center;
         line-height: 2.6vh;
     } .homelink:hover{
