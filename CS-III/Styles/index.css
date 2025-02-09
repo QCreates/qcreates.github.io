@@ -4,7 +4,7 @@ body{
     margin-right: 0vw;
     margin-left: 0vw;
     margin-top: 10vh;
-    background-color: #101210;
+    background-color: #171917;
 }
 
 /* Containers */
@@ -97,12 +97,12 @@ body{
 /* BUTTONS */ 
 .tablink{
     width: 14vw;
-    padding-top: 1vh;
-    height: 7vh;
+    padding-top: 1.5vh;
+    height: 6.5vh;
     background-color: #00000000;
     border-radius: 0.5vh;
 }.tablink:hover{
-    background-color: #afb3b470;
+    background-color: #ffffff13;
 } #GitHub{
     margin-left: 1vw;
     margin-bottom: 1vh;
@@ -313,9 +313,10 @@ h1{
         padding-top: 2vh;
         height: 6vh;
     }.tablink:hover{
-        background-color: #afb3b470;
+        background-color: #ffffff05;
     }   #GitHub{
-        padding: 0;
+        padding-top: 2vh;
+        height: 6vh;
         position: absolute;
         left: 2vw;
         bottom: 0vh;
