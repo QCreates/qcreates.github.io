@@ -1,51 +1,57 @@
 body{
-    color: #84b6b8;
+    color: #5d986bc2;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-h1{
-    font-size: 3vh;
+h1, h2{
+    font-size: 1.6vw;
     font-weight: 300;
-}
-
-h2{
-    font-size: 3vh;
-    font-weight: 300;
-}
-#center{
-    text-align: center;
-} .journal {
-    margin-left: 2vw;
-}
-
-p{
-    font-size: 2.5vh;
+} p{
+    font-size: 1.5vw;
     font-weight: 200;
-} .sources{
-    font-size: 1.25vw;
 }
-
-.tablink, .homelink{
+.tablink{
     text-align: center;
-    font-weight: 300;
 }
 a, button{
     text-decoration: none;
-    color: #283435;
-    font-weight: 400;
-    font-size: 2vh;
+    color: #5d986bc2;
+    font-weight: 300;
+    font-size: 1.2vw;
+} button{
+    font-weight: 100;
+    font-size: 1.7vw;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 } a:hover, button:hover {
-    color: #788fb1;
+    color: #b7bbb8c9;
     cursor: pointer;
 }
-
-button{
-    font-weight: 100;
-    font-size: 3vh;
+.homePage{
+    font-size: 1.5vw;
 }
 
-.journal{
-    font-size: 2.5vh;
-    font-weight: 200;
+#center{
     text-align: center;
+}
+
+
+@media screen and (orientation: portrait) {
+    h1, h2{
+        font-size: 2.5vh;
+        font-weight: 300;
+    } p{
+        font-size: 2vh;
+        font-weight: 200;
+    }
+    a, button{
+        font-weight: 300;
+        font-size: 2vh;
+    } button{
+        font-weight: 100;
+        font-size: 1.8vh;
+    } .categoryContainer{
+        font-size: 2.5vh;    
+    }    
+    .homePage{
+        font-size: 2vh;
+    }
 }

@@ -4,19 +4,111 @@ body{
     margin-right: 0vw;
     margin-left: 0vw;
     margin-top: 10vh;
-    background-color: #cfeef1;
+    background-color: #101210;
 }
 
 /* Containers */
-.mainContainer{
+
+.simpleBtnContainer, .buttonContainer{
+    margin-top: -9vh;
     margin-left: 1vw;
     width: 98vw;
-    height: 89vh;
-    background-color: #f3f9fc;
+    height: 8vh;
+    background-color: #00000000;
     border-radius: .5vh;
+    border: none;
+    display: flex;
+    justify-content: end;
+}
+.simpleBtnContainer {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    justify-content: start;
+}
+.simpleHomePage{
+    margin-left: 0;
+    height: 8vh;
+    width: 40vw;
+    text-align: center;
+    background-color: #00000074;
+    border: none;
+    border-radius: 0.5vh;
+}
+.simpleBack{
+    width: 20vw;
+    height: 8vh;
+    border-radius: 0.5vh;
+    background-color: #00000040;
+    border: none;
+    margin-left: 38vw;
+}
+.homelink{
+    display: flex; /* Use flexbox instead of grid */
+    margin-right: 10vw;
+    height: 8vh;
+    width: 30vw;
+} .portrait{
+    border-radius: 0.5vh 0 0 0.5vh;
+} .homePage{
+    width: 30vw;
+    background-color: #00000074;
+    border: none;
+    border-radius: 0 0.5vh 0.5vh 0;
+} .homePage:hover{
+    background-color: #ffffff05;
+}
+.tablinkContainer {
+    display: flex;
+    width: 60vw;
+    gap: 0.7vw;
+}
+
+.mainContainer{
+    margin-left: 1vw;
+    margin-top: 0;
+    width: 98vw;
+    height: 84vh;
+    /*background-color: #f3f9fc20;
+    border-radius: .5vh;*/
     overflow-y: auto;
 }
 
+.contentContainer{
+    display: grid;
+    background-color: #00000074;
+    grid-template-columns: repeat(2, 1fr); /* Max 2 columns */
+    justify-content: center;
+    align-items: center;
+    width: 50vw; /* Adjust as needed */
+    height: 60vh;
+    padding: 2vh;
+    margin-top: 1vh;
+    margin-left: 24vw;
+} .categoryContainer{
+    height: 15vw;
+/*    width: 18vw;*/
+    background-color: #ffffff00;
+    border-radius: 0.5vh;
+    border: none;
+} .categoryContainer:hover{
+    background-color: #ffffff05;
+}
+
+/* BUTTONS */ 
+.tablink{
+    width: 14vw;
+    padding-top: 1vh;
+    height: 7vh;
+    background-color: #00000000;
+    border-radius: 0.5vh;
+}.tablink:hover{
+    background-color: #afb3b470;
+} #GitHub{
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+} #GitHub:hover{
+    background-color: #00000000;
+}
 
 #sortContainer{
     margin-top: 25vh;
@@ -24,23 +116,12 @@ body{
 } #sortContainer:hover{
     background-color: #d9d9d9;
 }
-
 .essayParagraphs{
     margin-right: 20vw;
     margin-left: 20vw;
 }
    
-.essayContainer{
-    margin-left: 13vw;
-    margin-top: 3vh;
-    width: 30vw;
-    height: 30vh;
-    background-color: #9ed9db60;
-    border-radius: 7vh;
-    border: none;
-} .essayContainer:hover{
-    background-color: #f3f9fc;
-} .photoContainer{
+ .photoContainer{
     margin-left: 5vw;
     margin-top: 10vh;
      width: 18vw;
@@ -50,57 +131,8 @@ body{
     border: none;
 }
 
-.buttonContainer{
-    margin-top: -9vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    width: 98vw;
-    height: 8vh;
-    background-color: none;
-    border-radius: .5vh;
-    border: none;
-    display: flex;
-    justify-content: flex-end;
-} .btn:hover{
-    background-color: #fedeef;
-}
-
-/* BUTTONS */
-.tablink{
-    width: 10vw;
-    margin-top: 1vh;
-    margin-left: 2vw;
-    margin-right: 1vw;
-    height: 5vh;
-    background-color: #00000000;
-    border-radius: 1vh;
-}.homelink{
-    width: 23vw;
-    height: 6vh;
-    padding-top: 2vh;
-    background-color: #788fb160;
-}#homePage1{
-    margin-right: 25vw;
-}#homePage{
-    border-radius: .5vh;
-    margin-right: 77vw;
-}.homelink:hover{
-    background-color: #d9d9d9;
-} #GitHub{
-    left: 92vw;
-} #blog{
-    left: 92vw;
-    bottom: 10vh;
-}
 
 
-.portrait{
-    width: 8vh;
-    border-radius: .5vh;
-    
-    border-top-right-radius: 0vh;
-    border-bottom-right-radius: 0vh;
-}
 
 
 .journalContainer{
@@ -118,16 +150,6 @@ body{
     border-radius: .5vh;
     border: none;
 }
-
-a{
-    padding-top: 1vh;
-    width: calc(6vw + 2vh);
-    height: 5vh;
-    border-radius: .5vh;
-}.tablink:hover{
-    background-color: #d9d9d9;
-}
-
 /* Random Stuffs */
 .importance, .aboutMe{
     margin-top: 10vh;
@@ -238,67 +260,77 @@ h1{
 }  
 
 @media screen and (orientation: portrait) {
+    /* Containers */
+    .mainContainer{
+        margin-left: 5vw;
+        width: 90vw;
+    }
+    .buttonContainer{
+        margin-left: 2vw;
+        width: 96vw;
+        height: 8vh;
+    }
+    .contentContainer{
+        width: 81vw; 
+        margin: 0;
+        height: 40vh;
+        padding: 2vh;
+        margin-top: 10vh;
+    } .categoryContainer{
+        height: 40vw;
+        font-size: 2vh;
+        background-color: #ffffff00;
+        border-radius: 0.5vh;
+        border: none;
+    } .categoryContainer:hover{
+        background-color: #ffffff05;
+    }
+    .homelink, .homePage{
+        margin-right: 2vw;
+        font-size: 1.7vh;
+        width:25vw;
+        height: 8vh;
+    } .portrait{
+        display: none;
+    } .homePage:hover{
+        background-color: #ffffff05;
+    }
+
+    .essayParagraphs{
+        width: 89vw;
+        margin: 0;
+    }
+
         
     /* BUTTONS */
-    .tablink{
-        width: 15vw;
-        height: 4vh;
-        padding-top: 2vh;
-        font-size: 1.6vh;
-        justify-content: center;
-        margin-top: 1vh;
-        margin-right: .1vw;
-        line-height: 2vh;
-        background-color: none;
-    }.homelink{
-        position: absolute;
-        font-size: 2vh;
-        left: 2vw;
-        width: 25vw;
-        padding-right: 2vw;
-        padding-left: 2vw;
-        border-radius: .5vh;
-        background-color: #788fb160;
-        justify-content: center;
-        line-height: 2.6vh;
-    } .homelink:hover{
-        background-color: #00000010;
-    } #GitHub{
-        left: 92vw;
-    } #blog{
-        left: 92vw;
-        bottom: 10vh;
-    }
-    .portrait{
+    #homeBtn{
         display: none;
     }
-
-    #contact{
-        display: block;
-        margin-top: 25vh;
-    } .contact_container{
-        display: flex;
-        justify-content: center;
-        width: 94vw;
-        border-radius: .4vh;
-        margin-left: 2vw;
-        margin-top: 1vh;
-        background-color: #ffffff80;
-    }#contact_text{
-        font-size: 2.5vh;
-    }#misc1{
-        margin-top: 30vh;
+    .tablink{
+        font-size: 1.7vh;
+        width: 23vw;
+        padding: 0;
+        padding-top: 2vh;
+        height: 6vh;
+    }.tablink:hover{
+        background-color: #afb3b470;
+    }   #GitHub{
+        padding: 0;
+        position: absolute;
+        left: 2vw;
+        bottom: 0vh;
+    } #GitHub:hover{
+        background-color: #00000000;
     }
-
     
-    .essayContainer{
+    .simpleBtnContainer {
+        width: 90vw;
         margin-left: 5vw;
-        margin-top: 7vh;
-        width: 40vw;
-        height: 20vh;
-        background-color: #9ed9db60;
-        border-radius: 7vh;
-        border: none;
-    } 
-
+        padding-top: 1vh;
+        padding-bottom: 2vh;
+        justify-content: start;
+    }
+    .simpleBack{
+        margin-left: 34vw;
+    }
 }

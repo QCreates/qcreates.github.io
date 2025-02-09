@@ -15,24 +15,29 @@
   </head>
 
   <body onload="JSON()">
-    <div class="buttonContainer" id="cont1">
-      <img class="portrait" src="../../CS-III/Images/Portrait.jpg" alt="Portrait">
-      <a href="../../index.html" class="homelink" id="homePage">Digital Portfolio</a>
-      <a href="../../index.html" class="tablink" id="page1">Home</a>
-      <a href="../Courses/courses.html" class="tablink" id="page2">Courses</a>
-      <a href="../Essays/essays.html" class="tablink" id="page3">Essays</a>
-      <a href="../Projects/projects.html" class="tablink" id="page4">Projects</a>
+    <div class="buttonContainer">
+      <div class="homelink" onclick="window.location='../../index.html'">
+        <img class="portrait" src="../Images/Portrait.jpg" alt="Portrait">
+        <button class="homePage">Digital Resume</button>  
+      </div>
+      <a href="../../index.html" class="tablink" id="homeBtn">Home</a>
+      <a href="../Courses/courses.html" class="tablink">Courses Taken</a>
+      <a href="../Resume/resume.html" class="tablink">Resume</a>
+      <a href="../Projects/projects.html" class="tablink">Projects</a>
     </div>
+    
     <div class="mainContainer">
       <div class="aboutMe">
-	<h1>These Are Some of My Projects</h1>
+	      <h1>These Are Some of My Projects</h1>
       </div>
-      <button onclick="window.location='./ISP/ISP.html'"  class="essayContainer">My CS-II ISP</button>
-      <button onclick="window.location='./ISP/construction.html'" class="essayContainer">ISP Proposal</button>
-      <button onclick="window.location='./ISP/construction.html'" class="essayContainer">Project Mae</button>
-      <button onclick="window.location='./ISP/Journal.html'" class="essayContainer">Journals</button>
+      <div class="contentContainer">
+        <button onclick="window.location='./ISP/ISP.html'"  class="categoryContainer">My CS-II ISP</button>
+        <button onclick="window.location='./ISP/construction.html'" class="categoryContainer">ISP Proposal</button>
+        <button onclick="window.location='./ISP/construction.html'" class="categoryContainer">Project Mae</button>
+        <button onclick="window.location='./ISP/Journal.html'" class="categoryContainer">Journals</button>
+      </div>
     </div>
-    <a href="https://qcreates.github.io/index.html" class="tablink" id="GitHub">GitHub</a>
+    <a href="https://github.com/QCreates/qcreates.github.io" class="tablink" id="GitHub">GitHub</a>
 
   </body>
   </html>
