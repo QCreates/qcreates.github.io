@@ -1,12 +1,19 @@
 body{
-    color: #5d986bc2;
+    color: #a7b5aac2;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h1, h2{
     font-size: 1.6vw;
     font-weight: 300;
-} p{
+}h3{
+    text-align: center;
+} p, h3{
+    color: #e0dbdbba;
     font-size: 1.5vw;
+    font-weight: 200;
+} .buttonDescr{
+    color: #e0dbdbba;
+    font-size: 1vw;
     font-weight: 200;
 }
 .tablink{
@@ -14,7 +21,7 @@ h1, h2{
 }
 a, button{
     text-decoration: none;
-    color: #5d986bc2;
+    color: #e0dbdbba;
     font-weight: 300;
     font-size: 1.2vw;
 } button{
