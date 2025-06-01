@@ -15,6 +15,10 @@ h1, h2{
     color: #e0dbdbba;
     font-size: 1vw;
     font-weight: 200;
+} .buttonVersion {
+    color: #e0dbdbda;
+    font-size: 1.3vw;
+    font-weight: 200;
 }
 .tablink{
     text-align: center;
@@ -57,7 +61,9 @@ a, button{
         font-size: 1.8vh;
     } .categoryContainer{
         font-size: 2.5vh;    
-    }    
+    } .buttonVersion {
+        font-size: 1.2vh;
+    }
     .homePage{
         font-size: 2vh;
     }
