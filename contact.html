@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <!-- Meta Stuff -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,7 +35,7 @@
         <h3>
             If you have any questions about my services, please feel free to reach out. To ensure a timely response, kindly use <strong>"Stash Service"</strong> as the subject line of your message.
         </h3>
-        <form action="https://formspree.io/f/xrgwabcd" method="POST" class="contact-form">
+        <form class="contact-form" onsubmit="sendEmail(event)">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required />
 
@@ -42,6 +44,8 @@
 
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="6" required></textarea>
+            
+            <div class="g-recaptcha" data-sitekey="6LcQOi8sAAAAAN5frdBx-kWsopdryzn4apEAF2Il"></div>
 
             <button type="submit" class="submitbtn">Send Message</button>
         </form>
@@ -49,6 +53,29 @@
       </div>
     </div>
     <a href="./contact.html" class="tablink" id="GitHub">Contact Me</a>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("slf6TW1E89BDBosRY");
+      })();
+
+      function sendEmail(e) {
+              e.preventDefault();
+
+                emailjs.sendForm(
+                  "service_ng4c465",
+                  "template_u7yk72x",
+                  e.target
+                ).then(
+                  () => alert("Message sent successfully."),
+                  (error) => {
+          console.error(error);
+          alert("Failed: " + error.text);
+        }
+
+        );
+      }
+    </script>
 
   </body>
   </html>
