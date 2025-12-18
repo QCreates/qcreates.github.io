@@ -39,6 +39,7 @@ input, textarea {
     box-shadow: none;
 } textarea {
     min-height: 7vh;
+    margin-bottom: 10px;
 }
 .submitbtn{
     background-color: #ffffff15;
@@ -47,7 +48,7 @@ input, textarea {
     outline: none;
     box-shadow: none;
     margin-top: 10px;
-    width: 150px;
+    width: 210px;
     height: 40px !important;
     margin-bottom: 10px;
 }
