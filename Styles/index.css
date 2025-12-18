@@ -338,8 +338,9 @@ h1{
 @media screen and (orientation: portrait) {
     /* Containers */
     .mainContainer{
-        margin-left: 5vw;
-        width: 90vw;
+        margin-left: 2.5vw;
+        width: 95vw;
+        height: 85svh;
     }
     .buttonContainer{
         margin-left: 2vw;
