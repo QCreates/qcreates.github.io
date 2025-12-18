@@ -98,6 +98,7 @@ label {
 } .portrait{
     border-radius: 0.5vh 0 0 0.5vh;
 } .homePage{
+    font-size: 20px !important;
     width: 30vw;
     background-color: #00000074;
     border: none;
@@ -359,7 +360,7 @@ h1{
     }
     .homelink, .homePage{
         margin-right: 2vw;
-        font-size: 1.7vh;
+        font-size: 15px !important;
         width:25vw;
         height: 8vh;
     } .portrait{
@@ -385,7 +386,7 @@ h1{
         display: none;
     }
     .tablink{
-        font-size: 1.5vh;
+        font-size: 15px !important;
         width: 23vw;
         padding: 0;
         padding-top: 2vh;
