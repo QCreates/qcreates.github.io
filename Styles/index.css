@@ -9,9 +9,9 @@ body{
 
 /* New */
  .descr{
-    padding: 0 10px 0 10px;
     background-color: #ffffff10;
-    margin: 20px 0 20px 0;
+    margin: 20px;
+    padding: 20px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ body{
 form {
     display: flex;
     flex-direction: column;
-    width: 60vw;
+    width: 55vw;
     justify-content: space-around;
 }
 input, textarea {
@@ -39,10 +39,10 @@ input, textarea {
     box-shadow: none;
 } textarea {
     min-height: 7vh;
-    width: 80vw;
+    width: 50vw;
     margin-bottom: 10px;
 } input {
-    width: 80vw;
+    width: 50vw;
 }
 .submitbtn{
     background-color: #ffffff15;
@@ -119,11 +119,8 @@ label {
 .mainContainer{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    margin-left: 5vw;
-    width: 90vw;
-    height: 80vh;
-    margin-bottom: 1vh;
+    margin: 20px 20vw;
+    height: 85vh;
     overflow-y: auto;
 } #bookPageContainer {
     height: 88vh;
