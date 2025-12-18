@@ -114,9 +114,9 @@ label {
 
 .mainContainer{
     margin-left: 1vw;
-    margin-top: 20px;
+    margin-top: 10vh;
     width: 98vw;
-    height: 83vh;
+    max-height: 75vh;
     /*background-color: #f3f9fc20;
     border-radius: .5vh;*/
     overflow-y: auto;
