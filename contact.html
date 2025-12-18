@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Stuff -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Tab Thing -->
+    <link rel="shortcut icon" href="https://i.pinimg.com/236x/01/4e/59/014e59fcdefd0a42af154e35b28cc09b--the-last-avatar-avatar-the-last-airbender.jpg" type="image/png" sizes="96x96">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./Styles/fonts.css" />
+    <link rel="stylesheet" href="./Styles/index.css" />
+  </head>
+
+  <body onload="JSON()">
+    <div class="buttonContainer">
+      <div class="homelink" onclick="window.location='./index.html'">
+        <img class="portrait" src="./CS-III/Images/Portrait.jpg" alt="Portrait">
+        <button class="homePage">QCreates</button>  
+      </div>
+      <a href="./index.html" class="tablink" id="homeBtn">Home</a>
+      <a href="./construction.html" class="tablink">Book Now</a>
+      <a href="./construction.html" class="tablink">FAQ</a>
+      <a href="./contact.html" class="tablink">Contact</a>
+    </div>
+
+
+    <div class="mainContainer">
+      <div class="descr">
+        <h1>Contact Me</h1>
+        <h3>
+            If you have any questions about my services, please feel free to reach out. To ensure a timely response, kindly use <strong>"Stash Service"</strong> as the subject line of your message.
+        </h3>
+        <form action="/send-message" method="POST" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit" class="submitbtn">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+    <a href="./contact.html" class="tablink" id="GitHub">Contact Me</a>
+
+  </body>
+  </html>
