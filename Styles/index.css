@@ -39,7 +39,10 @@ input, textarea {
     box-shadow: none;
 } textarea {
     min-height: 7vh;
+    width: 80vw;
     margin-bottom: 10px;
+} input {
+    width: 80vw;
 }
 .submitbtn{
     background-color: #ffffff15;
@@ -122,6 +125,8 @@ label {
     height: 80vh;
     margin-bottom: 1vh;
     overflow-y: auto;
+} #bookPageContainer {
+    height: 88vh;
 }
 
 .contentContainer{
