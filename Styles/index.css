@@ -113,12 +113,13 @@ label {
 }
 
 .mainContainer{
-    margin-left: 1vw;
-    margin-top: 10vh;
-    width: 98vw;
-    max-height: 75vh;
-    /*background-color: #f3f9fc20;
-    border-radius: .5vh;*/
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 5vw;
+    width: 90vw;
+    height: 80vh;
+    margin-bottom: 1vh;
     overflow-y: auto;
 }
 
