@@ -1,6 +1,6 @@
 body{
     line-height: 2;
-    overflow: hidden;
+    overflow-x: hidden;
     margin-right: 0vw;
     margin-left: 0vw;
     margin-top: 10vh;
@@ -8,8 +8,34 @@ body{
 }
 
 /* New */
+.bgContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+}
+.imgBg{
+    z-index: -1;
+    position: absolute;
+    margin-top: 2vh;
+    height: 88vh;
+    border-radius: 15px;
+}
+.landingTxt {
+    font-weight: 200;
+    color: white;
+}
+.landingBtn {
+    background-color: #000000ba;
+    padding: 0px 20px;
+    border-radius: 10px;
+} .landingBtn:hover{
+    background-color: #ffffffba;
+    color: black;
+}
  .descr{
-    background-color: #ffffff10;
+    background-color: #463f3fd2;
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
@@ -120,8 +146,7 @@ label {
     display: flex;
     flex-direction: column;
     margin: 20px 20vw;
-    height: 85vh;
-    overflow-y: auto;
+    padding-bottom: 200px;
 } #bookPageContainer {
     height: 88vh;
 }
@@ -340,7 +365,10 @@ h1{
     .mainContainer{
         margin-left: 2.5vw;
         width: 95vw;
-        height: 85svh;
+        padding-bottom: 30px;
+    }
+    #bookPageContainer {
+        height: auto;
     }
     .buttonContainer{
         margin-left: 2vw;

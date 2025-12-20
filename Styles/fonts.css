@@ -1,5 +1,5 @@
 body{
-    color: #a7b5aac2;
+    color: #fff;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h1, h2{
@@ -8,18 +8,18 @@ h1, h2{
 }h3{
     text-align: center;
 } p, h3{
-    color: #e0dbdbba;
+    color: #fff;
     font-size: 20px !important;
     font-weight: 200;
 } h4 {
     font-size: 15px;
     font-weight: 300;
 }.buttonDescr{
-    color: #e0dbdbba;
+    color: #fff;
     font-size: 1vw;
     font-weight: 200;
 } .buttonVersion {
-    color: #e0dbdbda;
+    color: #fff;
     font-size: 1.3vw;
     font-weight: 200;
 }
@@ -28,7 +28,7 @@ h1, h2{
 }
 a, button{
     text-decoration: none;
-    color: #e0dbdbba;
+    color: #fff;
     font-weight: 300;
     font-size: 20px !important;
 } button{
