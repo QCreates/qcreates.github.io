@@ -78,7 +78,7 @@ input, textarea {
     box-shadow: none;
     margin-top: 10px;
     width: 210px;
-    height: 40px !important;
+    height: auto !important;
     margin-bottom: 10px;
 }
 label {
