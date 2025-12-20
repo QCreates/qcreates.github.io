@@ -138,7 +138,6 @@ label {
 }
 .tablinkContainer {
     display: flex;
-    width: 60vw;
     gap: 0.7vw;
 }
 
@@ -190,11 +189,13 @@ label {
     background-color: #ffffff05;
 }
 .tablink{
-    width: 14vw;
-    padding-top: 1.5vh;
-    height: 6.5vh;
+    min-width: 10vw;
     background-color: #00000000;
     border-radius: 0.5vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }.tablink:hover{
     background-color: #ffffff13;
 } #GitHub{
@@ -361,25 +362,39 @@ h1{
 }  
 
 @media screen and (orientation: portrait) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
     .imgBg {
-        height: 60vh;
+        left: 50%;
+        transform: translateX(-69%);
+        height: 45vh;
+        object-fit: cover;
     }
     .bgContainer {
-        height: 62vh;
+        height: 57vh;
+        position: relative;
+        overflow: hidden; /* CROPS anything sticking out */
+        width: 100vw;
+    }
+    }
+    .descr {
+        background-color: #3e3838;
     }
     /* Containers */
     .mainContainer{
         margin-left: 2.5vw;
         width: 95vw;
         padding-bottom: 30px;
+        overflow-x: hidden;
     }
     #bookPageContainer {
         height: auto;
     }
     .buttonContainer{
-        margin-left: 2vw;
-        width: 96vw;
         height: 8vh;
+        overflow-x: hidden;
     }
     .contentContainer{
         width: 81vw; 
@@ -428,8 +443,6 @@ h1{
         font-size: 15px !important;
         width: 23vw;
         padding: 0;
-        padding-top: 2vh;
-        height: 6vh;
     }.tablink:hover{
         background-color: #ffffff05;
     }   #GitHub{
