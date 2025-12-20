@@ -361,6 +361,9 @@ h1{
 }  
 
 @media screen and (orientation: portrait) {
+    .imgBg {
+        display: none;
+    }
     /* Containers */
     .mainContainer{
         margin-left: 2.5vw;
